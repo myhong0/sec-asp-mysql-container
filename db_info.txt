@@ -1,0 +1,37 @@
+DB정보
+
+1. mysql_container
+
+169.44.125.72
+root
+mysqlPassword
+test
+
+
+2. mysql_service
+us-cdbr-iron-east-04.cleardb.net
+bead68c8d90fd8
+fe5965e2def7ee2
+ad_a12a339dd82c7fb
+
+
+3.taccesslog ddl
+
+CREATE TABLE `taccesslog` (
+  `AccessNo` int(11) NOT NULL AUTO_INCREMENT,
+  `AccessUrl` varchar(200) NOT NULL,
+  `AccessIPAddr` varchar(20) NOT NULL,
+  `BrowserType` varchar(100) NOT NULL,
+  `AccessDate` datetime NOT NULL,
+  PRIMARY KEY (`AccessNo`)
+) ENGINE=MyISAM AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+
+
+4.tproduct ddl
+
+CREATE TABLE `tproduct` (
+  `ProductNo` int(11) NOT NULL AUTO_INCREMENT,
+  `ProductName` varchar(200) NOT NULL,
+  `ProductUrl` varchar(200) NOT NULL,
+  PRIMARY KEY (`ProductNo`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
