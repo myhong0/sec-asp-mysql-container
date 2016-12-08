@@ -11,11 +11,9 @@
             var serviceURL = '/Home/ProductDetail';
 
             $('#myCarousel').on('slide.bs.carousel', function (e) {
-                //var currentIndex = $('div.active').index() + 1;
-                //console.log(currentIndex);
+
                 var slideFrom = $(this).find('.active').index() + 1;
                 var slideTo = $(e.relatedTarget).index() + 1;
-                console.log(slideFrom + ' => ' + slideTo);
                 var nextDIV = $(this).find("#banner" + slideTo);
                 console.log(nextDIV);
 
@@ -91,7 +89,7 @@
         <h2>Product</h2>
         <ul>
             <li>
-                <p id="productSpec">
+                <p id="productSpec" style="font-size:26px;">
                     <a href="http://www.samsung.com/global/galaxy/gear-s3/">Galaxy Gear VR</a>
                 </p>
             </li>
