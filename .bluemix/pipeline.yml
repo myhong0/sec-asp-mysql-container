@@ -18,7 +18,7 @@ stages:
   triggers:
   - type: stage
   jobs:
-  - name: Deploy to dev
+  - name: Deploy App
     type: deployer
     target:
       region_id: ibm:yp:us-south
